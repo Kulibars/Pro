@@ -1,0 +1,657 @@
+/*
+ * Theme name: Тема для Тренеровки
+ * Author: Kulibars
+ * Author URI: https://misha.agency
+ * Version: 1.0
+ */
+.body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.body {
+    min-height: 100%;
+}
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+ /* Видео *//*===================================================================================================*/
+ 
+.page-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+ 
+.page-video:before {
+  content: "";
+  display: block;
+  position: 20%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.maker-1 {
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.maker-2 {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.maker-3 {
+    width: 24%;
+    height: 69%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.maker-4 {
+    width: 28%;
+    height: 45%;
+    position: absolute;
+    right: 180px;
+    bottom: 0px;
+}
+
+
+.page-video .video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 55%;
+}
+ 
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.mybatton {
+	position: relative;
+	color: #00a650; /*задаём цвет ссылки*/
+	cursor: pointer;
+	line-height: 1; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+
+}
+.mybatton:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 4px; /*задаём ширину линии*/
+	background-color: #00a650; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.mybatton:hover:after,
+.mybatton:focus:after {
+	width: 100%; 
+}
+/* Меню *//*===================================================================================================*/
+.navbar-default
+    {
+        background: #fff;
+        border: none;
+        box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+        margin: 0 !important;
+        padding: 0;
+    }
+.navbar-default .navbar-brand
+    {
+        padding-top: 4px;
+        padding-bottom: 60px;
+    }
+.navbar-default .navbar-nav li a
+    {
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 35px;
+    }
+.navbar-default .navbar-nav li a:hover
+    {
+        color: #93ca3a;
+    }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #93ca3a;
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+        border: none;
+        padding-top: 16px;
+    }
+.navbar-default .navbar-toggle .icon-bar {
+        background: #93ca3a;
+        border-color: transparent;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { 
+	background-color: transparent 
+}
+
+.footer
+    {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+.footer p
+    {
+        line-height: 12px;
+    }
+.footer .social-icon
+    {
+        top: 0px;
+    }
+/* end footer */
+
+.too-icon {
+	padding: 10px;
+}
+
+/* start social icon */
+.social-icon
+    {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        top: 20px;
+    }
+.social-icon li
+    {
+        display: inline-block;
+        list-style: none;
+    }
+.social-icon li a
+    {
+        color: #333;
+        font-size: 13px;
+        text-decoration: none;
+        transition: all 0.4s ease-in-out;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+.social-icon li a:hover
+    {
+        background: #f2f2f2;
+    }
+    
+/* Слайдер *//*===================================================================================================*/
+
+.wrapper {
+	background-color: #F8F8F8;
+	height: 200px;
+	width: 100%;
+}
+.slider{
+	display: flex;
+    align-items: center;
+}
+
+.slider_item {
+	padding-left: 10px;
+	padding-right: 10px;
+
+
+}
+
+.slider_item img {
+	text-align: center;
+	max-width: 100px;
+    max-height: 100px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: self-start;
+}
+
+.slick-slide{
+	flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    width: 100%;
+}
+
+
+/* Блоки/блок-1 *//*===================================================================================================*/
+
+#blocks {
+	margin: 0 24px !important;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.main-heading {
+	 font-weight:800;
+	 text-align: center;
+	 font-size: 40px !important;
+     line-height: 50px !important;
+}
+
+#caption {
+  padding: 10px;
+  padding-top: 50px;
+
+}
+
+.borderElement {
+  overflow: hidden;
+  position: relative;
+  padding: 43px 30px 50px;
+  height: 100%;
+  text-align: left;
+  box-shadow: 3px 3px 3px #A9A9A9;
+  background-color: #07081E;
+  border: 1px solid #07081E;
+  border-radius: 25px;
+}
+
+.content-box {
+    justify-content: flex-start !important;
+	position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+.content-box > div {
+	font-size: 20px !important;
+    line-height: 30px !important;
+	padding-bottom: 120px;
+}
+.content-box > h5 {
+	
+	font-size: 22px;
+	line-height: 1.3 !important;
+	width: 100%;
+	position: sticky;
+	padding: 0;
+	display: flex;
+	color: #FFFFFF;
+	font-weight: bolder;
+}
+
+
+.content-box > h5 > img {
+    position: absolute;
+    right: -16px;
+    top: -35px;
+    width: 40px;
+}
+.custom_line {
+	padding-right: 50px;
+	color: #FFFFFF;
+	font-size: 15px !important;
+    line-height: 30px !important;
+	display: flex;
+	font-weight:300;
+	
+}
+.custom_line > img {
+	margin-right: 5px;
+    margin-top: 6px;
+    min-width: 18px;
+    min-height: 18px;
+    max-width: 18px;
+    max-height: 18px;
+}
+/* Блок-1 кнопки *//*===================================================================================================*/
+
+
+.btn-details {
+	position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.order_product {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: aliceblue;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: 700;
+    border: 1px solid #14c1b9;
+}
+
+/* Блок-2 *//*===================================================================================================*/
+.main_page_text_list {
+	margin-left: 5%;
+    margin-top: 15%;
+    width: auto;
+}
+
+
+.main_page_text_list > div {
+	padding: 15px;
+    border: 1px solid;
+    border-radius: 20px;
+    margin-top: 25px;
+    min-height: 150px;
+}
+
+.main_page_text_list > div > h4 {
+	display: flex;
+    margin-bottom: 0;
+    font-size: 22px;
+    color: #22577E;
+}
+
+.main_page_text_list > div h4 img {
+	width: 29px;
+    min-width: 25px;
+    min-height: 25px;
+    margin-top: 0;
+    margin-right: 15px;	
+}
+
+
+.main_page_text_list > div p {
+	font-size: 20px !important;
+    line-height: 30px !important;
+	margin-left: 38px;
+    /* line-height: 25px; */
+    margin-top: 10px;
+    margin-bottom: 0
+}
+
+.main_page_video_list {
+	margin-top: 30% ;
+}
+
+/* Блок-3 *//*===================================================================================================*/
+
+.block-3 {
+  padding-block-end: 10%;
+  width: 100%;
+  height: 100%;	
+  background-color: transparent;
+  background-image: linear-gradient(272deg, #128C88 33%, #1F3B59 100%);
+  margin-top: 10%;
+}
+
+.block-3-heading {
+	margin-top: 50px;
+}
+
+.block-3-heading h2 {
+	color: #fff;
+    font-weight: 900;
+    text-align: center;
+    font-size: 40px !important;
+    line-height: 50px !important;
+}
+
+.borderElement-2 {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 43px 30px 50px;
+  text-align: left;
+  background-color: #07081E;
+  border-radius: 25px;
+  color: #fff;
+  transition: background 1.5s ease;
+}
+
+
+.icon-main {
+  position: absolute;
+  bottom: -88px;
+  right: -88px;
+  width: 188px;
+  height: 188px;
+  color: #fff;
+  background: #34333b;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+    top: -21px !important;
+    right: -80px !important;
+    width: 165px !important;
+    height: 125px !important;
+}
+
+.icon-main > img {
+	position: absolute;
+	top: 45px;
+    left: 30px;
+    line-height: 1;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 30px;
+	
+}
+
+.content-box-2 {
+	display: flex;
+    flex-direction: column;
+	margin-top: 50px;
+	justify-content: flex-start !important;
+	position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+
+.content-box-2 > h5{
+	font-size: 22px;
+	line-height: 1.3 !important;
+	width: 100%;
+	position: sticky;
+	padding: 0;
+	display: flex;
+	font-weight: bolder;
+}
+
+
+.content-box-2 > div {
+	padding-bottom: 50px;
+    font-size: 18px !important;
+    line-height: 25px !important;
+}
+
+.borderElement-2:hover {
+	color: #07081E;
+  	background: #fff;
+}
+
+/*.transition-Element:hover {
+  color: #07081E;
+  background: #fff;
+}
+
+.transition-Element {
+	transition: background 1.5s ease;
+}*/
+
+
+/* Кнопки блока-3 *//*===================================================================================================*/
+
+.btn-detals {
+	color: #fff;
+	bottom: 40px;
+	position: absolute;
+    width: 100%;
+	font-size: 14px;
+    font-weight: bold;
+	display: inline-block;
+	background-color: transparent;
+    transition: background 1.5s ease;
+
+}
+
+.btn-detals i {
+	margin-right: 10px;
+	transition: all 2s ease;
+}
+
+.btn-detals i:hover {
+	margin-right: 3px;
+}
+
+.borderElement-2:hover .btn-detals {
+	color: #07081E;
+	text-decoration: none;
+}
+
+/* Слайдер-2 работа *//*===================================================================================================*/
+
+.block-4 {
+    background-color: #F8F8F8;
+	height: 420px;
+	width: 100%;
+}
+
+#c-block-4 {
+
+}
+
+.slider-2{
+    display: flex;
+    align-items: center;
+}
+
+.slick-slide {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+
+.slider_item-2 {
+    overflow: hidden;
+    border: 1px solid #07081E;
+    margin: auto;
+    width: 390px;
+    height: 320px;
+    box-sizing: border-box
+}
+
+.project-box {
+    border: 1px solid #07081E;
+    border-color: #07081E;
+    background: #fff;
+    color: #3498db;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+
+.slider_item-2> img {
+    width: 100%;
+    height: 270px;
+    border-radius: 10px; 
+}
+
+.portfolio-info {
+    top: 60%;
+    left: 30px;
+    margin-left: 20px; 
+    /* text-align: end; */
+    background-color: #07081E;
+    opacity: 1;
+    z-index: 1;
+    text-align: left;
+    width: calc(100% - 60px);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 10px;
+}
+
+
+.portfolio-info-inner {
+    box-sizing: border-box;
+    margin-right: 45px;
+    text-align: left;
+}
+
+.portfolio-info-inner > h5 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 7px;
+    font-size: 20px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.portfolio-info-inner > h5 a {
+    color: #fff;
+    word-wrap: break-word;
+}
+
+.btn-link {
+    background: white !important;
+    position: absolute;
+    right: -94px;
+    top: -100px;
+    width: 188px;
+    height: 185px;
+    border-radius: 50% !important;
+}
+
+.btn-link > i {
+    color: black !important;
+    position: absolute;
+    bottom: 45px;
+    left: 50px;
+    line-height: 1;
+}

@@ -1,0 +1,251 @@
+/*
+ * Theme name: Тема для Тренеровки
+ * Author: Kulibars
+ * Author URI: https://misha.agency
+ * Version: 1.0
+ */
+.body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.body {
+    min-height: 100%;
+}
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+ 
+.page-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+ 
+.page-video:before {
+  content: "";
+  display: block;
+  position: 20%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.maker-1 {
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.maker-2 {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.maker-3 {
+    width: 24%;
+    height: 69%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.maker-4 {
+    width: 28%;
+    height: 45%;
+    position: absolute;
+    right: 180px;
+    bottom: 0px;
+}
+
+
+.page-video .video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 55%;
+}
+ 
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.mybatton {
+	position: relative;
+	color: #00a650; /*задаём цвет ссылки*/
+	cursor: pointer;
+	line-height: 1; /*задаём высоту строки*/
+	text-decoration: none; /*убираем подчёркивание*/
+
+}
+.mybatton:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 4px; /*задаём ширину линии*/
+	background-color: #00a650; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.mybatton:hover:after,
+.mybatton:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.navbar-default
+    {
+        background: #fff;
+        border: none;
+        box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+        margin: 0 !important;
+        padding: 0;
+    }
+.navbar-default .navbar-brand
+    {
+        padding-top: 4px;
+        padding-bottom: 60px;
+    }
+.navbar-default .navbar-nav li a
+    {
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 35px;
+    }
+.navbar-default .navbar-nav li a:hover
+    {
+        color: #93ca3a;
+    }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #93ca3a;
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+        border: none;
+        padding-top: 16px;
+    }
+.navbar-default .navbar-toggle .icon-bar {
+        background: #93ca3a;
+        border-color: transparent;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { 
+	background-color: transparent 
+}
+
+.footer
+    {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+.footer p
+    {
+        line-height: 12px;
+    }
+.footer .social-icon
+    {
+        top: 0px;
+    }
+/* end footer */
+
+.too-icon {
+	padding: 10px;
+}
+
+/* start social icon */
+.social-icon
+    {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        top: 20px;
+    }
+.social-icon li
+    {
+        display: inline-block;
+        list-style: none;
+    }
+.social-icon li a
+    {
+        color: #333;
+        font-size: 13px;
+        text-decoration: none;
+        transition: all 0.4s ease-in-out;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+.social-icon li a:hover
+    {
+        background: #f2f2f2;
+    }
+.wrapper {
+	background-color: #F8F8F8;
+	height: 200px;
+	width: 100%;
+}
+.slider{
+	width: 100%;
+}
+
+.slider_item {
+	width: 50px;
+	padding: 10px;
+}
+
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: self-start;
+}
+/* Слайд */
+.slick-slide{
+}
+
+.main-heading {
+	 font-weight:800;
+	 text-align: center;
+}
+#caption {
+	text-align: center;
+}
+.borderElement {
+  background-color: #EEDDFF;
+  border: 6px solid #7922CC;
+  border-radius: 25px;
+}
